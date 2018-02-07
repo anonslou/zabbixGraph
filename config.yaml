@@ -1,0 +1,25 @@
+---
+database:
+    user: zabbix # need access for read data
+    password: zabbix
+    host: '127.0.0.1'
+    database: zabbix
+mail:
+    server: mail.domain.ru
+    from: 'zabbix@domain.ru'
+    to: 'user1@domain.ru, user2@domain.ru'
+nodes:
+    msk10-rtr1: # device name as is in zabbix DB
+        name: 'Filial 1' # title for graph
+        interfaces:
+            L2VPN-MTS-40Mb: GigabitEthernet0/2 # name of interface for graph and interface ID as is in zabbix DB
+    msk20-rtr1:
+        name: 'KB1'
+        interfaces:
+            L2VPN-MTS-100Mb: GigabitEthernet0/1
+            L2VPN-RTK-100Mb: GigabitEthernet0/2 # more than one interface support
+    msk30-rtr2:
+        name: 'Filial 2'
+        interfaces:
+            L2VPN-RTK-100Mb: GigabitEthernet0/0/0
+            CIRCLE-1Gb: GigabitEthernet0/1/0
