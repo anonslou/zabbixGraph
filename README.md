@@ -10,4 +10,4 @@
 
 Авторизации при отправке по почты нет - это "фишка" старого заббикса.
 
-msk10-rtr1.png - пример внешнего вида графика.
+![пример графика](https://raw.githubusercontent.com/anonslou/zabbixGraph/master/msk10-rtr1.png "Пример графика")
